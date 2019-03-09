@@ -8,7 +8,7 @@ End Code
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
-<div class="row">
+<div class="grid-x grid-padding-x">
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>
