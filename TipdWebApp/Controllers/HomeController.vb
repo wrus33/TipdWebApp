@@ -1,17 +1,17 @@
 ﻿Public Class HomeController
 	Inherits System.Web.Mvc.Controller
 
-	Function Index() As ActionResult
+	Function Dashboard() As ActionResult
 		Return View()
 	End Function
 
-	Function About() As ActionResult
+	Function Schedule() As ActionResult
 		ViewData("Message") = "Your application description page."
 
 		Return View()
 	End Function
 
-	Function Contact() As ActionResult
+	Function TipBook() As ActionResult
 		ViewData("Message") = "Your contact page."
 
 		Return View()

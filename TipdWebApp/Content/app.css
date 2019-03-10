@@ -12,31 +12,17 @@
 	.topbar-center-logo .menu {
 		background: #1A9193;
 	}
-		.topbar-center-logo .menu .tabs-title:hover{
-			background-color: #fefefe;
-		}
-		.topbar-center-logo .menu .tabs-title:focus {
-			background-color: #fefefe;
-		}
-		.topbar-center-logo .menu.tabs {
-			border-style: none;
-		}
+	
 		.topbar-center-logo .menu a {
 			color: #fefefe;
 			font-size: 1em;
+			bottom: 0;
 		}
-			.topbar-center-logo .menu a:hover {
-				color: #1A9193;
-			}
-			.tabs-title a:active{
-				color: #1A9193;
-			}
-			.tabs-title {
-				border-style: none;
-			}
-			.tabs:focus {
-				background-color: #fefefe;
-			}
+		.topbar-center-logo .menu a:focus {
+			color: #1A9193;
+			background-color: #fefefe;
+		}
+				
 		.topbar-center-logo p {
 			color: #fefefe;
 		}
@@ -60,7 +46,7 @@
 		vertical-align: text-top;
 	}
 
-
+	
 
 /*LOGO*/
 #logo {
@@ -69,10 +55,46 @@
 	font-family: 'Lobster', cursive;
 }
 
+/*Stats Bar*/
 
-/*PANELS*/
-.tabs-panel {
-	border-width: 5px;
-	border-radius: 5px;
-	border-color: 
+.stats-list {
+	list-style-type: none;
+	clear: left;
+	margin: 0;
+	padding-top: 20px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 2em;
 }
+
+	.stats-list .stats-list-positive {
+		color: #3adb76;
+	}
+
+	.stats-list .stats-list-negative {
+		color: #cc4b37;
+	}
+
+	.stats-list > li {
+		display: inline-block;
+		margin-right: 10px;
+		padding-right: 10px;
+		border-right: 1px solid #cacaca;
+		text-align: center;
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+
+		.stats-list > li:last-child {
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.stats-list > li .stats-list-label {
+			display: block;
+			margin-top: 2px;
+			font-size: 0.9em;
+			font-weight: normal;
+		}
+

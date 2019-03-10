@@ -27,10 +27,10 @@
 	<!-- medium and larger nav bar -->
 	<div class="top-bar topbar-center-logo" id="topbar-center-logo">
 		<div class="top-bar-left">
-			<ul class="menu tabs" id="navTabs">
-				<li id="tabDashboard" class="tabs-title is-active"><a href="#panel1"">Dashboard</a></li>
-				<li id="tabSchedule" class="tabs-title"><a href="#panel2">Schedule</a></li>
-				<li id="tabTipBook" class="tabs-title"><a href="#panel3">Tip Book</a></li>
+			<ul class="menu" id="nav">
+				<li><a href="/Home/Dashboard">Dashboard</a></li>
+				<li><a href="/Home/Schedule">Schedule</a></li>
+				<li><a href="/Home/TipBook">Tip Book</a></li>
 			</ul>
 		</div>
 		<div class="top-bar-center">
@@ -47,9 +47,7 @@
 
 
 	<div class="container body-content">
-		<div class="tabs-panel" data-tabs-content="navTabs">
 			@RenderBody()
-		</div>
 
 		<footer></footer>
 	</div>
