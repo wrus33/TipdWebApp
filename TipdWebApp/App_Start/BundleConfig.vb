@@ -5,7 +5,7 @@ Public Module BundleConfig
 	Public Sub RegisterBundles(ByVal bundles As BundleCollection)
 
 		bundles.Add(New ScriptBundle("~/bundles/jquery").Include(
-					"~/Scripts/vendor/jquery-{version}.js"))
+					"~/Scripts/vendor/jquery.js"))
 
 
 		bundles.Add(New ScriptBundle("~/bundles/foundation").Include(

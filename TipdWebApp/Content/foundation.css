@@ -270,9 +270,9 @@ textarea {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: grid-x grid-padding-x wrap;
-      -ms-flex-flow: grid-x grid-padding-x wrap;
-          flex-flow: grid-x grid-padding-x wrap; }
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
 
 .cell {
   -webkit-box-flex: 0;
@@ -2010,7 +2010,7 @@ textarea {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto; }
 
-.flex-child-ggrid-x grid-padding-x {
+.flex-child-grow {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
@@ -2022,19 +2022,19 @@ textarea {
       -ms-flex: 0 1 auto;
           flex: 0 1 auto; }
 
-.flex-dir-grid-x grid-padding-x {
+.flex-dir-row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: grid-x grid-padding-x;
-      -ms-flex-direction: grid-x grid-padding-x;
-          flex-direction: grid-x grid-padding-x; }
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
-.flex-dir-grid-x grid-padding-x-reverse {
+.flex-dir-row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -webkit-flex-direction: grid-x grid-padding-x-reverse;
-      -ms-flex-direction: grid-x grid-padding-x-reverse;
-          flex-direction: grid-x grid-padding-x-reverse; }
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
 
 .flex-dir-column {
   -webkit-box-orient: vertical;
@@ -2061,7 +2061,7 @@ textarea {
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
-  .medium-flex-child-ggrid-x grid-padding-x {
+  .medium-flex-child-grow {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
@@ -2071,18 +2071,18 @@ textarea {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto; }
-  .medium-flex-dir-grid-x grid-padding-x {
+  .medium-flex-dir-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: grid-x grid-padding-x;
-        -ms-flex-direction: grid-x grid-padding-x;
-            flex-direction: grid-x grid-padding-x; }
-  .medium-flex-dir-grid-x grid-padding-x-reverse {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .medium-flex-dir-row-reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: grid-x grid-padding-x-reverse;
-        -ms-flex-direction: grid-x grid-padding-x-reverse;
-            flex-direction: grid-x grid-padding-x-reverse; }
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
   .medium-flex-dir-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2107,7 +2107,7 @@ textarea {
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
-  .large-flex-child-ggrid-x grid-padding-x {
+  .large-flex-child-grow {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
@@ -2117,18 +2117,18 @@ textarea {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto; }
-  .large-flex-dir-grid-x grid-padding-x {
+  .large-flex-dir-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: grid-x grid-padding-x;
-        -ms-flex-direction: grid-x grid-padding-x;
-            flex-direction: grid-x grid-padding-x; }
-  .large-flex-dir-grid-x grid-padding-x-reverse {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .large-flex-dir-row-reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: grid-x grid-padding-x-reverse;
-        -ms-flex-direction: grid-x grid-padding-x-reverse;
-            flex-direction: grid-x grid-padding-x-reverse; }
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
   .large-flex-dir-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2411,9 +2411,9 @@ ul.no-bullet, ol.no-bullet {
   thead.show-for-print {
     display: table-header-group !important; }
   tbody.show-for-print {
-    display: table-grid-x grid-padding-x-group !important; }
+    display: table-row-group !important; }
   tr.show-for-print {
-    display: table-grid-x grid-padding-x !important; }
+    display: table-row !important; }
   td.show-for-print {
     display: table-cell !important; }
   th.show-for-print {
@@ -2706,7 +2706,7 @@ ul.no-bullet, ol.no-bullet {
     border-top-color: #ffae00; }
   .button.dropdown.hollow.alert::after, .button.dropdown.clear.alert::after {
     border-top-color: #cc4b37; }
-  .button.argrid-x grid-padding-x-only::after {
+  .button.arrow-only::after {
     top: -0.1em;
     float: none;
     margin-left: 0; }
@@ -2754,7 +2754,7 @@ textarea {
 
 textarea {
   max-width: 100%; }
-  textarea[grid-x grid-padding-xs] {
+  textarea[rows] {
     height: auto; }
 
 input:disabled, input[readonly],
@@ -3325,9 +3325,9 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-  -webkit-flex-ggrid-x grid-padding-x: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
-          flex-ggrid-x grid-padding-x: 1;
+          flex-grow: 1;
   margin-bottom: 1rem;
   border: 1px solid #e6e6e6;
   border-radius: 0;
@@ -3455,9 +3455,9 @@ select {
             flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: grid-x grid-padding-x;
-        -ms-flex-direction: grid-x grid-padding-x;
-            flex-direction: grid-x grid-padding-x; }
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .menu.vertical {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -3488,9 +3488,9 @@ select {
               flex-wrap: wrap;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      -webkit-flex-direction: grid-x grid-padding-x;
-          -ms-flex-direction: grid-x grid-padding-x;
-              flex-direction: grid-x grid-padding-x; }
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
     .menu.medium-vertical {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
@@ -3517,9 +3517,9 @@ select {
               flex-wrap: wrap;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      -webkit-flex-direction: grid-x grid-padding-x;
-          -ms-flex-direction: grid-x grid-padding-x;
-              flex-direction: grid-x grid-padding-x; }
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
     .menu.large-vertical {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
@@ -3555,9 +3555,9 @@ select {
   .menu.icon-left li a {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-flow: grid-x grid-padding-x nowrap;
-        -ms-flex-flow: grid-x grid-padding-x nowrap;
-            flex-flow: grid-x grid-padding-x nowrap; }
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
     .menu.icon-left li a img,
     .menu.icon-left li a i,
     .menu.icon-left li a svg {
@@ -3565,9 +3565,9 @@ select {
   .menu.icon-right li a {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-flow: grid-x grid-padding-x nowrap;
-        -ms-flex-flow: grid-x grid-padding-x nowrap;
-            flex-flow: grid-x grid-padding-x nowrap; }
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
     .menu.icon-right li a img,
     .menu.icon-right li a i,
     .menu.icon-right li a svg {
